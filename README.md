@@ -22,17 +22,17 @@ This is a [call for dreamers][a]. Pull requests and issues appreciated.
 
 ## Informal proposal:
 tdver proposes a quantitative `x.y.z` versioning system in which:
-- x must (and may only) increment if any existing test is removed or modified by
-a release
-- y must (and may only) increment when a new test is added by a release AND x is
-not incremented
-- z must increment on any release not incrementing x or y
+- `x` must (and may only) increment if any existing test is removed or modified
+by a release
+- `y` must (and may only) increment when a new test is added by a release AND
+`x` is not incremented
+- `z` must increment on any release not incrementing `x` or `y`
 
 tdver makes further qualitative but unenforced recommendations:
-- z-incrementing releases should only be used to improve tested code within the
+- `z`-incrementing releases should only be used to improve tested code within the
 bounds of existing tests
 
-### Discussion/extrapolation/interpretation
+### Discussion/interpretation
 One of the goals of tdver is that the version numbers convey meaning better than
 human-selected versioning:
 
@@ -66,9 +66,9 @@ maintainers to avoid creating cynical or insufficient tests
 - does tdver need to comment on the 'public api' in any way?
 - should (can?) tdver use some sort of nonstandard version prefix to communicate
 the versioning scheme? (i.e., t0.0.1, tdv0.0.1)
-- tdver would require a y version increment to fix a bug if a test-case is
-introduced, an x version update if a bugfix required modifying an existing test,
-but would only require a z version increment if the bugfix ignores the tests; is
+- tdver would require a `y` version increment to fix a bug if a test-case is
+introduced, an `x` version update if a bugfix required modifying an existing test,
+but would only require a `z` version increment if the bugfix ignores the tests; is
 this a problem?
 
 ## Specification
