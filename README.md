@@ -70,6 +70,8 @@ the versioning scheme? (i.e., t0.0.1, tdv0.0.1)
 introduced, an `x` version update if a bugfix required modifying an existing test,
 but would only require a `z` version increment if the bugfix ignores the tests; is
 this a problem?
+- this seems to break some of our notions about how to roadmap for a given
+version, at least for `y` or `z`-incrementing releases
 
 ## Specification
 I'm going to resist the urge to include my own thoughts to avoid
