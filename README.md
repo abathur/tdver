@@ -99,6 +99,13 @@ tdver-1.0-full; depends on how useful the enchancements are...
 	is following tests; if it was t1.2.0-8-1...)
 	- the hitch is that counting tests is hard; the best we can probably do is
 	either counting files or lines in the provisional directory.
+- tdver currently makes no provision for build metadata, pre-releases, or other
+things that sometimes end up in version strings; does it need them?
+- tdver uses the -D indicator in a way that is consistent with how python's
+setuptools computes and compares versions (i.e., 1.0.0-1 is GREATER than 1.0.0)
+but in a way that would fall under how semver recognizes a pre-release string,
+so it seems plausible that version comparisons in other languages/package
+managers may be incompatible.
 
 ## Specification
 
