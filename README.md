@@ -31,7 +31,7 @@ by a release AND *b* is not incremented.
 - *d* must increment on any release not incrementing *a*, *b* or *c*
 - only *d* may increment if the provisional tests directory contains tests
 
-Projects using tdver:
+A simple git implmentation just looking for lines added and removed would require that projects using tdver:
 - must declare a location for provisional tests (tests introduced or
 changed here will not require a *b* release)
 - must declare a separate location for storing bug-fix tests
