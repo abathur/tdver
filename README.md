@@ -36,7 +36,7 @@ by a release AND *b* is not incremented.
 One of the goals of tdver is that the version numbers convey meaning better than
 human-selected versioning; what might be inferable?
 
-####Overall
+#### Overall
 - tdver shifts emphasis from releases the maintainer suggests will/won't
 break depending code to whether or not the code is tested
 - there is no time when the standard rules don't apply; the number of the first
@@ -46,7 +46,7 @@ already says a lot about the development philosophy behind the project)
 - a simple git implementation focused on lines edited would require a separate
 location for bug-fix tests.
 
-####A
+#### A
 - The test change/removal requirement of an *a* release encourages seeing tests
 as a promise; as long as you are under the same *a* release, the coverage of
 existing code should never regress
@@ -56,7 +56,7 @@ changed, though might be more specific cases:
 	bug-fix or a new test
 	- spring-cleaning or reorganization of old tests
 
-####B
+#### B
 - projects with no *b* version are obviously untested
 - high *b* versions may imply a project is well structured, plans well
 for the future, and is under swift, active development (as they are able to
@@ -64,13 +64,13 @@ introduce frequent new features without needing changes that disrupt old tests)
 - in cases where the desire is minimal software with little feature creep, the
 minimal use of *b* releases suggest a mature, stable project
 
-####C
+#### C
 - the history of a project's *c* releases should communicate how quickly the
 maintainers push bug fixes
 - this history probably also conveys how long (on average) the project takes to
 stabilize following new major/minor releases
 
-####D
+#### D
 - projects with frequent *d* releases allow interested users to try new features
 while they are being refined before formal release
 
